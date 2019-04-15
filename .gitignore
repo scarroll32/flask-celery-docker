@@ -1,0 +1,10 @@
+*.py[cod]
+env/
+.env
+celerybeat-schedule
+celerybeat-schedule.db
+__pycache__/
+logs/
+!.gitignore
+.DS_Store
+.env.production

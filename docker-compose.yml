@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+  api:
+    build:
+      context: ./
+      dockerfile: ./api/Dockerfile
+    restart: always
+    ports:
+     - "5000:5000"
+    depends_on:
+      - redis
+  worker:
+    user: nobody
+    build:
+      context: ./
+      dockerfile: ./worker/Dockerfile
+    depends_on:
+      - redis
+  monitor:
+    build:
+      context: ./
+      dockerfile: ./monitor/Dockerfile
+    ports:
+     - "5555:5555"
+    entrypoint: flower
+    command:  --port=5555 --broker=redis://redis:6379/0
+    depends_on:
+      - redis
+  redis:
+    image: redis
