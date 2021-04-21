@@ -17,6 +17,9 @@ docker-compose up -d --build
 
 This will expose the Flask application's endpoints on port `5000` as well as a [Flower](https://github.com/mher/flower) server for monitoring workers on port `5555`
 
+- http://localhost:5000/
+- 
+
 To add more workers:
 ```bash
 docker-compose up -d --scale worker=5 --no-recreate
@@ -85,7 +88,7 @@ docker rmi $(docker images -q)
 
 ### Shell into container
 ```
-sudo docker exec -i -t 665b4a1e17b6 /bin/bash
+sudo docker exec -i -t 665b4a1e17b6 /bin/sh
 ```
 
 
@@ -114,4 +117,7 @@ https://stackoverflow.com/questions/19853378/how-to-keep-multiple-independent-ce
 
 - https://github.com/smallwat3r/docker-nginx-gunicorn-flask-letsencrypt/blob/master/docker-compose.yml
 
+- https://mherman.org/presentations/dockercon-2018/#29
+
+- 
 
