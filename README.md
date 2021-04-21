@@ -106,3 +106,12 @@ https://stackoverflow.com/questions/50798281/register-multiple-tasks-with-celery
 https://stackoverflow.com/questions/43920621/celery-tasks-on-multiple-machines
 
 https://stackoverflow.com/questions/19853378/how-to-keep-multiple-independent-celery-queues
+
+
+## Notes 
+
+- https://medium.com/hootsuite-engineering/hot-reloading-on-a-dockerized-flask-app-4e87b88ea303
+
+- https://github.com/smallwat3r/docker-nginx-gunicorn-flask-letsencrypt/blob/master/docker-compose.yml
+
+

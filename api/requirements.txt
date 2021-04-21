@@ -1,4 +1,4 @@
-celery
+celery==4.4.7  # due to bug https://github.com/mher/flower/issues/1029
 Flask
 redis
 rollbar
