@@ -1,4 +1,4 @@
-# Docker Flask Celery Redis
+# Docker Flask Celery Redis and Nginx
 
 A basic [Docker Compose](https://docs.docker.com/compose/) template for orchestrating a [Flask](http://flask.pocoo.org/) application & a [Celery](http://www.celeryproject.org/) queue with [Redis](https://redis.io/)
 
